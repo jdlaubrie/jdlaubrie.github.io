@@ -1,13 +1,15 @@
 ---
 layout: frontpage
-title: Joan Laubrie
-description: vagabundo is a PhD candidate at Broom University. 
-keywords: Joan, Laubrie, treats, recycling, mail, being a good boy
+title: JD Laubrie
+description: JD Laubrie is a PhD candidate at École des Mines de Saint-Étienne. 
+keywords: Joan, Laubrie, growth, remodeling, nonlinear solid mechanics
 ---
 
-I am a PhD candidate at École des Mines de Saint-Étienne. My research interests include continuum mechanics, hyperelasticity, growth and remodeling and finite element method.
+About
+=====
+J.D. Laubrie is a PhD candidate at École des Mines de Saint-Étienne. His research interests include continuum mechanics, hyperelasticity, growth and remodeling and finite element method.
 
-Also I am interested to share my adventure experiences. My adventures are based on bike trip, hiking and climbing.
+He is also interested to share adventure experiences. The adventures are based on bike trip, hiking and climbing.
 
 ---
 
@@ -24,7 +26,7 @@ Also I am interested to share my adventure experiences. My adventures are based 
         <div class="span2">
         <a href="../assets/headshot.jpg">
             <img src="../assets/headshot.jpg"
-                  title="Joan Laubrie" alt="Joan Laubrie"/></a>
+                  title="J.D. Laubrie" alt="J.D. Laubrie"/></a>
         </div>
     </div>
 </div>

@@ -9,7 +9,8 @@ name: J.D. Laubrie
 description: Researcher
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://github.com/jdlaubrie/jdlaubrie.github.io/tree/master/images/perfil.jpg
+#avatar:
+#don't use this for now, the enviroment in style.scss for this is comented
 
 #
 # Flags below are optional

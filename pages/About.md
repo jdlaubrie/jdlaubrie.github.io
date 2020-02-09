@@ -11,10 +11,29 @@ Joan received a BS in Mechanical Engineering in 2013 and a MS in Mechanical Engi
 Joan is also interested to share adventure experiences. The adventures are based on bike trip, hiking and climbing.
 
 #### Teaching experience
+Computational Mechanics, University of Santiago, Chile. 2017.
+
+Diploma in Computational Mechanics, University of Santiago, Chile. 2017.
+
+Introduction to Mechanical Design, Pontifical Catholic University, Chile. 2016.
+
+Machine Dynamics, Unversity of Santiago, Chile. 2016.
+
+Strength of Materials, University of Santiago, Chile. 2016.
+
+Rational Mechanics, Academia Politécnica Militar, Chile. 2014-2015.
 
 #### Work experience
+Project Engineer, Laboratory of Mechanical Simulations (LABSIM), DICTUC. 2016.
+
+Intern, SAG milling area in Concentrate plant, CODELCO-Andina. 2015.
 
 #### Research projects
+Localization in biomechanics and mechanobiology of aneurysms: Towards personalized medicine. *European Research Council, ERC-2014-CoG BIOLOCHANICS*. Researcher.
+
+Biomechanical behavior of soft tissues: Modeling and numerical simulation. *Dicyt, 051415GH*. Researcher.
+
+To be born high and flat (Andean Altiplano): healing vascular function and pulmonary hypertension by a combined treatment in neonatal lambs. *Conicyt-Fondecyt, 1151119*. Researcher.
 
 #### Computational Skills
 FORTRAN, C++\\
@@ -45,3 +64,4 @@ France\\
 Email: [joan.laubrie@emse.fr](mailto:joan.laubrie@emse.fr)\\
 Phone: 04 77 42 93 22
 
+<img src="{{ site.baseurl }}/images/perfil.jpg" style="width: 400px;"/>

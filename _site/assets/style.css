@@ -64,21 +64,21 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #121221;
   font: 18px/1.4 Helvetica, Arial, sans-serif;
-  color: #333;
+  color: #eee;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 790px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
+  color: #b5e853;
   font-weight: bold;
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -107,7 +107,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #666;
+  color: #4183C4;
 }
 
 p {
@@ -115,12 +115,12 @@ p {
 }
 
 a {
-  color: #4183C4;
+  color: #6a9fb5;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover, a:active {
-  color: #4183C4;
+  color: #6a9fb5;
 }
 
 ul, ol {
@@ -189,34 +189,17 @@ img {
 /* LAYOUT / SECTIONS */
 /*********************/
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  border-bottom: 2px dashed #eee;
 }
 @media screen and (max-width: 640px) {
   .masthead {
     text-align: center;
   }
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-}
-@media screen and (max-width: 640px) {
-  .site-avatar {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-.site-avatar img {
-  border-radius: 5px;
 }
 
 .site-info {
@@ -232,7 +215,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: #333;
+  color: #b5e853;
   cursor: pointer;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -242,7 +225,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: #666;
+  color: #4183C4;
   font-size: 16px;
 }
 @media screen and (max-width: 640px) {
@@ -253,9 +236,9 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px;
+  margin-top: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 @media screen and (max-width: 640px) {
   nav {
@@ -267,7 +250,7 @@ nav {
 }
 nav a {
   margin-left: 20px;
-  color: #333;
+  color: #ac4142;
   text-align: right;
   font-weight: 300;
   letter-spacing: 1px;
@@ -307,9 +290,7 @@ nav a {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: #eee;
+  background-color: #000;
 }
 
 footer {

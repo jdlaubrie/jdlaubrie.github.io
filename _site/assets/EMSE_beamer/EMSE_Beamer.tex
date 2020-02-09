@@ -1,0 +1,265 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% B E G I N   F I L E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%!
+
+%\PassOptionsToPackage{gray}{xcolor}
+
+% EMSE Corporative Colors
+\definecolor{VioletEMSE}{RGB}{95,37,159}
+\definecolor{GrayEMSE}{RGB}{169,169,169}
+%
+\mode<presentation>{
+\usetheme{default}
+%\usetheme{Rochester}
+%\usetheme{Frankfurt}
+%\usetheme{Berlin}
+\setbeamersize{text margin left=4mm,text margin right=4mm}
+\setbeamertemplate{navigation symbols}{}
+%
+%\useoutertheme[subsection=false]{miniframes}
+\useinnertheme{rectangles}
+\usecolortheme[named=VioletEMSE]{structure}
+\setbeamercovered{transparent}
+%
+%% Colors
+\setbeamercolor{section in head/foot}{fg=white,bg=VioletEMSE}
+\setbeamercolor{background canvas}{bg=white, fg=black} % BW
+\setbeamercolor{normal text}{fg=VioletEMSE} % BW
+\setbeamercolor{title}{fg=white,bg=white} % BW
+\setbeamercolor{section in toc}{fg=black} % BW
+\setbeamercolor{author}{fg=black} % BW
+\setbeamercolor{frametitle}{fg=black,bg=white} % BW
+\setbeamercolor{section in toc shaded}{fg=black} % BW
+
+%% Color Blocks
+\setbeamercolor{block title}{use=GrayEMSE,fg=VioletEMSE,bg=GrayEMSE}
+\setbeamercolor{block body}{fg=VioletEMSE}
+%% Fonts
+\setbeamerfont*{tiny structure}{series=\mdseries,size=\fontsize{6}{6}}
+\setbeamerfont*{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont*{subtitle}{size=\normalsize,series=\mdseries}
+\setbeamerfont*{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{framesubtitle}{series=\mdseries}
+\setbeamerfont*{author}{size=\small,series=\bfseries}
+\setbeamerfont*{date}{size=\footnotesize}
+\setbeamerfont*{block title}{size={},series=\bfseries}
+}
+
+
+\usepackage{amsmath}         %math symbols
+\usepackage{amssymb}         %symbols
+\usepackage{amsfonts,bm}     %fonts
+\usepackage{array}
+\usepackage{appendixnumberbeamer}
+\usepackage[spanish]{babel}
+\usepackage{booktabs}
+\usepackage[scale=1.2]{ccicons}
+\usepackage{fancybox}        %ovalbox
+\usepackage{graphicx}        %pictures
+\usepackage{hyperref}        %references
+\usepackage[utf8]{inputenc}
+\usepackage{multimedia}
+\usepackage{xcolor,color}
+
+\usepackage{listings}
+%\usepackage{media9}
+%\usepackage[framemethod=TikZ]{mdframed}
+
+
+\usepackage{pgf,tikz}
+%\usepackage{pgfplots}
+\usepgflibrary{arrows}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{intersections}
+\usetikzlibrary{positioning}
+\usepgflibrary{shapes}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{spy}
+\tikzstyle{spring}=[thick,decorate,decoration={aspect=0.5, segment length=3mm, amplitude=2mm, coil}]
+% Vector Styles
+\tikzstyle{load}   = [ultra thick,-latex]
+\tikzstyle{stress} = [-latex]
+\tikzstyle{dim}    = [latex-latex]
+\tikzstyle{dimr}   = [-latex]
+\tikzstyle{axis}   = [-latex,black!55]
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=gray!20, 
+    text width=2.5em, text badly centered, node distance=2cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=gray!20, 
+    text width=5em, text centered, rounded corners, minimum height=0.1em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=2.2cm,
+    minimum height=0.1em]
+
+\renewcommand{\bfdefault}{sbc}
+%
+%------------------------------------------------------------------------------!
+% Settings for package: HyperRef **********************************************!
+%
+\hypersetup{
+%pdfpagemode=FullScreen,
+baseurl={joan.laubrie@emse.fr},
+pdftitle={Aneurysm in Thoracic Aorta},
+pdfauthor={Joan Laubrie},
+pdfcreator={Joan Laubrie},
+pdfproducer=PDFLaTeX,
+pdfsubject={},
+pdfkeywords={}
+}
+%
+%------------------------------------------------------------------------------!
+% New commands ****************************************************************!
+%
+\newcommand{\blue}{\textcolor{blue}}
+\newcommand{\red}{\textcolor{red}}
+\newcommand{\violet}{\textcolor{VioletEMSE}}
+\newcommand{\green}{\textcolor{green}}
+\newcommand{\yellow}{\textcolor{yellow}}
+\newcommand{\white}{\textcolor{white}}
+\newcommand{\black}{\textcolor{black}}
+\newcommand{\cyan}{\textcolor{cyan}}
+\newcommand{\gray}{\textcolor{GrayEMSE}}
+\newcommand{\orange}{\textcolor{orange}}
+%
+%------------------------------------------------------------------------------!
+% Settings for cover **********************************************************!
+% 
+\title{\TITULO}
+\subtitle{\SUBTITULO}
+%\institute{\large Universidad de Santiago de Chile}
+\date{\gray{\FECHA}}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%!
+%% Settings for Listings Package
+%
+
+\lstset{%
+tabsize=2,
+basicstyle=\ttfamily,
+backgroundcolor=\color{white!85!black},
+commentstyle=\color{red}}
+
+
+
+%------------------------------------------------------------------------------!
+% Settings for beamer style ***************************************************!
+% 
+%%%%%%%%%%%%%%%%%%%%%%
+%Formato header
+\setbeamertemplate{headline}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,xshift=0,yshift=0] at (current page.north west) {\includegraphics[width=0.1\paperwidth]{../plantillas/logo3}};
+\node[anchor=north west] at (15mm,-1.5mm) {\hbox{%
+\begin{beamercolorbox}[wd=0.85\paperwidth,ht=3mm,dp=4mm,right]{section in head/foot}%
+\insertnavigation{0.85\paperwidth}
+\end{beamercolorbox}%
+}};%
+\end{tikzpicture}
+\vskip10mm
+}%
+
+%% Formato pie de página
+\setbeamertemplate{footline}{%
+\begin{beamercolorbox}{white}
+\vskip3pt%
+\makebox[0.90\textwidth][l]{%
+\hspace{2mm}\href{mailto:joan.laubrie@emse.fr}{\sf \violet{joan.laubrie@emse.fr}}%
+\hspace{1mm}\violet{\ccLogo\:\ccAttribution}\hspace{1mm}%
+{\sf \violet{\insertsubtitle}}%
+}%
+%%\ccLogo$\quad$\ccAttribution$\:$\ccNonCommercial$\:$\ccNoDerivatives\\
+\makebox[0.10\textwidth][c]{%
+{\sf \violet{\insertframenumber\;of\;\inserttotalframenumber}}}
+\vskip2pt
+\end{beamercolorbox}
+}
+
+%&%%%%%%%%%%%%%
+\setbeamertemplate{frametitle}
+{ %
+%    \nointerlineskip
+%    \begin{beamercolorbox}[sep=0.3cm,ht=0cm,wd=\paperwidth]{frametitle}
+%        \vbox{}\vskip-2ex%
+	\violet{\insertframetitle}\\[-1mm]
+%        \strut{\large\orange{\insertframesubtitle}}\strut
+%        \vskip-0.8ex%
+%    \end{beamercolorbox} %
+%    \nointerlineskip %
+%    \vspace{-3mm}
+    %\noindent\gray{\rule[2mm]{0.94\paperwidth}{0.7pt}}
+    %\vspace{9mm}
+}
+
+\setbeamertemplate{title page}
+{ %
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=south west] at (0,-55mm) {%
+\parbox{12cm}{%
+{\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}
+\vskip2mm
+{\usebeamercolor[fg]{author}\insertauthor}
+\vskip2mm
+{\usebeamercolor[fg]{date}\insertdate}
+	}};
+\end{tikzpicture}
+}
+
+\newcommand{\OpenSlides}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,xshift=-1.5mm,yshift=1.5mm] at (current page.north west) {\includegraphics[width=\paperwidth]{../plantillas/fondo1}};
+\node[anchor=north west,xshift=-1.5mm,yshift=-54mm] at (current page.north west) {\includegraphics[width=\paperwidth]{../plantillas/fondo2}};
+\node[anchor=north west,xshift=5mm,yshift=-3mm] at (current page.north west) {\includegraphics[width=2.5cm]{../plantillas/logo1}};
+\end{tikzpicture}
+%
+\titlepage}
+
+
+\newcommand{\CloseSlides}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,xshift=-1.5mm,yshift=1.5mm] at (current page.north west) {\includegraphics[width=\paperwidth]{../plantillas/fondo3}};
+\node[anchor=north west,xshift=5mm,yshift=-3mm] at (current page.north west) {\includegraphics[width=2.5cm]{../plantillas/logo2}};
+\end{tikzpicture}
+%
+\titlepage}
+
+%\addtobeamertemplate{frametitle}{}{%
+%\begin{tikzpicture}[remember picture,overlay]
+%\node[anchor=north east,yshift=2pt] at (current page.north east) {\includegraphics[height=1cm]{/Users/Roberto/Dropbox/Documents/USaCh/Corporativo/SetHorAi/UDS_HCOLOR}}; %UDS_HBCO
+%\end{tikzpicture}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  N O T E S   S L I D E  %%%%%%%%%%%%%%%%%%%%%%%%%%%!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%!
+\newcommand{\NotesSlide}{
+\begin{frame}<0|handout:0>
+%
+\frametitle{NOTAS}
+\framesubtitle{}
+%
+\begin{center}
+\renewcommand{\arraystretch}{1.7}
+\begin{tabular}{p{10cm}}
+\hline \\ \hline \\ \hline \\ \hline \\ \hline \\ \hline \\ \hline \\ \hline
+\end{tabular}
+\end{center}
+%
+%
+\end{frame}}
+
+
+\newcommand\TITULO{}
+\newcommand\SUBTITULO{}
+\newcommand\FECHA{}
+
+\newcommand{\TitleFrame}{}
+\newcommand{\SubTitleFrame}{}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% E N D   F I L E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%!

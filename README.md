@@ -1,7 +1,9 @@
 # jdlaubrie.github.io
 
-This is the GitHub repository used to create a simple academic website. [The tutorial can be found here.](http://marisacarlos.com/pages/create-simple-academic-website)
+This is the GitHub repository used to create a simple academic/personal website.
 
-This tutorial and website are heavily based on the tutorial and website from [Karl Broman](http://kbroman.org). Thanks Karl Broman!
+This website is heavily based on jekyll-now theme for GitHub pages, [jekyll-now](https://github.com/barryclark/jekyll-now). Thanks for the template!
+
+However I have learned a lot from Broman's website, there are some tutorials and his simply css template helped me to understand how to work with stylesheets. [Karl Broman](http://kbroman.org); thanks Karl Broman!
 
 ---

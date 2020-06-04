@@ -7,3 +7,4 @@ This website is heavily based on jekyll-now theme for GitHub pages, [jekyll-now]
 However I have learned a lot from Broman's website, there are some tutorials and his simply css template helped me to understand how to work with stylesheets. [Karl Broman](http://kbroman.org); thanks Karl Broman!
 
 ---
+<a href="https://www.researchgate.net/profile/Joan_Laubrie_Soto">Joan Darío Laubrie Soto on ResearchGate</a>

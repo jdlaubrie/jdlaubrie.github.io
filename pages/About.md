@@ -48,7 +48,7 @@ Joan is also interested to share adventure experiences. The adventures are based
 * 2014.10, English course, Santiago Chamber of Commerce, by means of CORFO scholarships, Chile
 * 2012.04, Fracture Mechanics, with Juan Pérez Ipiña, Departament of Metallurgical Engineering, University of Saintiago, Chile.
 
-#### Lenguages
+#### Languages
 * Spanish, mother language
 * English, advanced
 * French, advanced

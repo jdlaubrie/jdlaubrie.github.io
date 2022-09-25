@@ -6,9 +6,19 @@ description: Laubrie's publications
 
 ## Articles
 
+* **J.D. Laubrie**, S.J. Mousavi, S. Avril. About prestretch in homogenized constrained mixture models simulating growth and remodeling in patient-specific aortic geometries. *Biomech Model Mechanobiol*. [2022; 21, 455-469.](https://doi.org/10.1007/s10237-021-01544-3)
+
+* S. Zhang, **J.D. Laubrie**, S.J. Mousavi, S. Avril. 3D finite-element modeling of vascular adaptation after endovascular aneurysm repair. *Int J Numer Meth Biomed Engng*. [2021; 36:e3547.](https://doi.org/10.1002/cnm.3547)
+
 * **J.D. Laubrie**, J. Mousavi, S. Avril. A new finite‐element shell model for arterial growth and remodeling after stent implantation. *Int J Numer Meth Biomed Engng*. [2020; 36:e3282.](https://doi.org/10.1002/cnm.3282)
 
 ## Conferences
+
+* **J.D. Laubrie**, J. Mousavi, R. Jayendiran, S. Avril. Coupling hemodynamics with mechanobiology in patient-specific computational models of ascending thoracic aneurysms. *USNCCM*, Virtual, USA, 25-29 July 2021.
+
+* **J.D. Laubrie**, J. Mousavi, S. Avril. 3D Growth and Remodeling in Ascending Thoracic Aortic Aneurysms. *SB3C*, Virtual, USA, 14-18 June 2021.
+
+* **J.D. Laubrie**, J. Mousavi, S. Avril. Computational modelling of arterial adaptation after stent implantation. *Congreso de Biomecánica y Biomateriales*, Santiago, Chile, 29-30 October 2020.
 
 * **J.D. Laubrie**, J. Mousavi, S. Avril. Finite-element modeling of arterial growth and remodeling after stent implantation. *Journées annuelles GDR Mécabio*, Marseille, France, 11-13 December 2019.
 

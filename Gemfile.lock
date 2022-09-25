@@ -14,7 +14,7 @@ GEM
       execjs
     coffee-script-source (1.11.1)
     colorator (1.1.0)
-    commonmarker (0.23.6)
+    commonmarker (0.17.13)
       ruby-enum (~> 0.5)
     concurrent-ruby (1.1.6)
     dnsruby (1.61.3)
@@ -67,7 +67,7 @@ GEM
       jekyll-theme-time-machine (= 0.1.1)
       jekyll-titles-from-headings (= 0.5.3)
       jemoji (= 0.11.1)
-      kramdown (= 2.3.1)
+      kramdown (= 1.17.0)
       liquid (= 4.0.3)
       mercenary (~> 0.3)
       minima (= 2.5.1)
@@ -191,7 +191,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
-    kramdown (2.3.1)
+    kramdown (1.17.0)
     liquid (4.0.3)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -247,4 +247,4 @@ DEPENDENCIES
   github-pages
 
 BUNDLED WITH
-   2.1.4
+   2.3.22

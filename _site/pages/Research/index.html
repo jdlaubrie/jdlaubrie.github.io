@@ -5,7 +5,7 @@
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
   <head>
-    <title>Research – J.D. Laubrie – Researcher</title>
+    <title>Research – J.D. Laubrie – Scientist</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -13,8 +13,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="Researcher">
-    <meta property="og:description" content="Researcher" />
+    <meta name="description" content="Scientist">
+    <meta property="og:description" content="Scientist" />
     
     <meta name="author" content="J.D. Laubrie" />
 
@@ -28,7 +28,7 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="/assets/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="J.D. Laubrie - Researcher" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="J.D. Laubrie - Scientist" href="/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
@@ -41,7 +41,7 @@
 
           <div class="site-info">
             <h1 class="site-name"><a href="/">J.D. Laubrie</a></h1>
-            <p class="site-description">Researcher</p>
+            <p class="site-description">Scientist</p>
           </div>
 
           <nav>
@@ -61,12 +61,51 @@
   <h1>Research</h1>
 
   <div class="entry">
-    <h2 id="growth-of-aneurysms-in-thoracic-aorta">Growth of aneurysms in Thoracic Aorta</h2>
-<p>Cardiovascular desease are one of the mean cause of death in the western world.</p>
+    <h2 id="mechanics-of-growth-and-remodeling">Mechanics of Growth and Remodeling</h2>
+<p>Let us consider a material mixture composed by several constituents (<script type="math/tex">j=1,2,...,n</script>) in its hypothetical traction-free reference configuration <script type="math/tex">\Omega_R\subset\mathbb{R}^3</script> and subsequently deformed into a loaded configuration <script type="math/tex">\Omega_t\subset\mathbb{R}^3</script> at time <script type="math/tex">t\geq0</script>. Each material point <script type="math/tex">\pmb{X}\in\Omega_R</script> is mapped to the corresponding spatial point <script type="math/tex">\pmb{x}(\pmb{X},t)\in\Omega_t</script> by <script type="math/tex">\pmb{x}:\mathbb{R}^{+}\times\Omega_R\rightarrow\mathbb{R}^3</script>. This allow to define the total deformation of the mixture as</p>
 
-<script type="math/tex; mode=display">\pmb{F} = \pmb{F}_{e} \pmb{F}_{gr}</script>
+<script type="math/tex; mode=display">\pmb{F} = \frac{\partial\pmb{x}}{\partial\pmb{X}} \mbox{ with } 
+J = det(\pmb{F}),</script>
 
-<script type="math/tex; mode=display">\Psi = \frac{1}{2}\kappa(J-1) + \frac{1}{2}\mu(\bar{I}_1-3) + \sum\frac{k_1}{2k_2}\left\{\exp\left[k_2(I_4-1)^2\right]-1\right\}</script>
+<p>where <script type="math/tex">\pmb{F}</script> is the deformation gradient of the mixture and incorporate elastic (<script type="math/tex">\pmb{F}^j_e</script>) and inelastic (<script type="math/tex">\pmb{F}^j_{gr}</script>) deformations for each <script type="math/tex">j</script>th constituent of the material,</p>
+
+<script type="math/tex; mode=display">\pmb{F} = \pmb{F}^j_{e} \pmb{F}^j_{gr}.</script>
+
+<p>It is assumed that each constituent of the mixture is hyperelastic and their potential elastic energy depends only on the elastic deformations (<script type="math/tex">\Psi^j=\Psi^j(\pmb{C}^j_e)</script>). We can define the second Piola-Kirchhoff stress tensor of the <script type="math/tex">j</script>th contituent as,</p>
+
+<script type="math/tex; mode=display">\pmb{S}^j = 2\frac{\varrho^j_R}{\phi^j}\frac{\partial\Psi^j}{\partial\pmb{C}} = 
+2\frac{\varrho^j_R}{\phi^j}\frac{\partial\Psi^j}{\partial\pmb{C}^j_e}:
+\frac{\partial\pmb{C}^j_e}{\partial\pmb{C}}</script>
+
+<p>where <script type="math/tex">\pmb{C}^j_e</script> is the elastic right Cauchy-Green tensor obtained from the total right Cauchy-Green tensor <script type="math/tex">\pmb{C}=\pmb{F}^T\pmb{F}</script> and the decomposition of the deformation <script type="math/tex">\pmb{F}</script>,</p>
+
+<script type="math/tex; mode=display">\pmb{C}^j_e = [\pmb{F}^j_{gr}]^{-T} \pmb{C} [\pmb{F}^j_{gr}]^{-1};</script>
+
+<p><script type="math/tex">\phi^j=\frac{\varrho^j_R}{\varrho_R}</script> is the constituent mass fraction, <script type="math/tex">\varrho_R</script> is the mixture density in reference configuration and <script type="math/tex">\varrho^j_R</script> is the <script type="math/tex">j</script>th constituent density in reference configuration.</p>
+
+<p>Thus applying the rule of mixtures, the total mass density is the additon of the constituent densities (<script type="math/tex">\varrho_R=\sum\varrho^j_R</script>). And in the same way the material stress is the addition of the constituent stresses (<script type="math/tex">\pmb{S}=\sum\phi^j\pmb{S}^j</script>), where the stress can be mapped to the spatial configuration by the push-forward transformation,</p>
+
+<script type="math/tex; mode=display">\pmb{\sigma}^j = \frac{1}{J}\pmb{F}\pmb{S}^j\pmb{F}^T,</script>
+
+<p>allowing to write the total mixture spatial stress as <script type="math/tex">\pmb{\sigma}=\sum\phi^j\pmb{\sigma}^j</script>.</p>
+
+<p>During Growth and Remodeling (G&amp;R) the tissue is continuously adapting and consequently is changing its structure with deposition/removal of mass of the contituents, for instance, elastin degradation, SMC apoptosis/proliferation or collagen production. The mass changes in the mixture can be written like,</p>
+
+<script type="math/tex; mode=display">\dot{m} = \frac{D}{Dt}(\varrho_R V) = \frac{D}{D}(\varrho v),</script>
+
+<p>where <script type="math/tex">\dot{m}</script> is the deposition/removal of mass in the mixture. Where the reference volume <script type="math/tex">V</script> does not change, the spatial density <script type="math/tex">\varrho</script> is homogeneous and constant in time, and the spatial volume <script type="math/tex">v</script> is related to the reference volume by <script type="math/tex">v=JV</script>. Therefore, the conservation of mass can be rewritten as,</p>
+
+<script type="math/tex; mode=display">\frac{\partial\varrho_R}{\partial t} = \varrho J div(\pmb{v}).</script>
+
+<p>We have to remark that in the G&amp;R framework the reference mass density (per unit reference volume) evolves and it is time dependent <script type="math/tex">\varrho_R=\varrho_R(t)</script>.</p>
+
+<p>Furthermore, it can be assumed that G&amp;R is an slow process and have place in long time scales. Then it can be assumed that the G&amp;R is quasi-static and the conservation of linear momentum equals zero,</p>
+
+<script type="math/tex; mode=display">\frac{D}{D t} (\varrho\pmb{v}) = div(\pmb{\sigma}) + \varrho\pmb{b} = 0,</script>
+
+<p>where <script type="math/tex">\pmb{v}</script> is the velocity of the body <script type="math/tex">\Omega_t</script> and <script type="math/tex">\pmb{b}</script> is the body force.</p>
+
+<p><img src="/images/constrained_mixture.png" style="width: 800px;" /></p>
 
   </div>
 </article>
@@ -77,7 +116,7 @@
       <div class="container">
         <footer class="footer">
           
-<a href="mailto:joan.laubrie@emse.fr"><i class="svg-icon email"></i></a>
+<a href="mailto:jdsoto@fondazionerimed.com"><i class="svg-icon email"></i></a>
 
 
 <a href="https://github.com/jdlaubrie"><i class="svg-icon github"></i></a>
